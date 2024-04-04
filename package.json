@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-vidflow",
+  "version": "1.0.0",
+  "description": "Curso Alura.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceslop84/nodejs-vidflow.git"
+  },
+  "keywords": [
+    "node.js",
+    "alura",
+    "curso"
+  ],
+  "author": "Cesar Rafael Lopes, Alura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceslop84/nodejs-vidflow/issues"
+  },
+  "homepage": "https://github.com/ceslop84/nodejs-vidflow#readme",
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
