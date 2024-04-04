@@ -1,9 +1,15 @@
+import axios from "axios";
+
 const containerVideos = document.querySelector(".videos__container");
 
 async function buscarEMostrarVideos() {
   try {
-    const busca = await fetch("http://localhost:3000/videos");
-    const videos = await busca.json();
+    const urlVideos = import.meta.env.VITE_URL_VIDEOS;
+    const busca = await axios.get(urlVideos);
+    const videos = await busca.data;
+
+    console.log(import.meta.env.PROD);
+    console.log(urlVideos);
 
     videos.forEach((video) => {
       if (video.categoria == "") {
